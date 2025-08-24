@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Swarnasudha Hair Oil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header class="header">
+  <div class="container inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Swarnasudha Hair Oil logo" onerror="this.style.display='none'">
+      <span>Swarnasudha Hair Oil</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="products.html">Buy</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">🛒 Cart <span id="cart-count" class="badge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container section">
+    <h1>Contact Us</h1>
+    <p>Questions or bulk orders? We’re happy to help.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Phone</h3>
+        <p><a href="tel:+919000000000">+91 90000 00000</a></p>
+      </div>
+      <div class="card">
+        <h3>Email</h3>
+        <p><a href="mailto:hello@swarnasudha.com">hello@swarnasudha.com</a></p>
+      </div>
+      <div class="card">
+        <h3>WhatsApp</h3>
+        <p><a target="_blank" href="https://wa.me/919000000000?text=Hi%20Swarnasudha!%20I%27d%20like%20to%20order.">Chat on WhatsApp</a></p>
+      </div>
+    </div>
+
+    <h2>Quick Enquiry</h2>
+    <form onsubmit="event.preventDefault(); openWhatsAppFromForm(this)">
+      <div class="grid-3">
+        <div class="card"><label>Name<br><input name="name" required></label></div>
+        <div class="card"><label>Phone<br><input name="phone" required></label></div>
+        <div class="card"><label>Message<br><input name="message" required></label></div>
+      </div>
+      <button class="btn btn-primary">Send via WhatsApp</button>
+    </form>
+  </main>
+  
+<footer class="footer">
+  <div class="container inner">
+    <div>
+      <h3>Swarnasudha Hair Oil</h3>
+      <p>100% pure, crafted with Ayurvedic ingredients for healthy hair.</p>
+      <p><strong>Disclaimer:</strong> This product is not a medicine. Individual results may vary.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="about.html">About</a></p>
+      <p><a href="benefits.html">Benefits</a></p>
+      <p><a href="products.html">Buy Now</a></p>
+      <p><a href="cart.html">Cart</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Phone: +91-90000-00000</p>
+      <p>Email: hello@swarnasudha.com</p>
+      <p>WhatsApp: <a href="https://wa.me/919000000000" target="_blank">Chat now</a></p>
+    </div>
+  </div>
+  <div class="copy">© 2025 Swarnasudha Hair Oil — All rights reserved.</div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Swarnasudha Hair Oil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<header class="header">
+  <div class="container inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Swarnasudha Hair Oil logo" onerror="this.style.display='none'">
+      <span>Swarnasudha Hair Oil</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="products.html">Buy</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-link" href="cart.html">🛒 Cart <span id="cart-count" class="badge">0</span></a>
+    </nav>
+  </div>
+</header>
+
+  <main class="container section">
+    <h1>Your Cart</h1>
+    <div id="cart-empty" class="notice" style="display:none">Your cart is empty. <a href="products.html">Shop products</a>.</div>
+    <table id="cart-table" class="table" style="display:none">
+      <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead>
+      <tbody id="cart-body"></tbody>
+      <tfoot>
+        <tr><td colspan="3">Total</td><td id="cart-total">₹0</td><td></td></tr>
+      </tfoot>
+    </table>
+    <div class="section actions" id="checkout-actions" style="display:none">
+      <button class="btn btn-primary" onclick="checkoutRazorpay()">Pay via Razorpay</button>
+      <button class="btn btn-primary" onclick="checkoutPayPal()">Pay via PayPal</button>
+      <a class="btn btn-outline" href="assets/upi-qr.png" download>Download UPI QR</a>
+      <button class="btn btn-outline" onclick="checkoutWhatsApp()">WhatsApp Order</button>
+      <button class="btn btn-outline" onclick="clearCart()">Clear Cart</button>
+    </div>
+    <p class="notice">Note: Payments are processed by secure providers. For UPI, send the exact total and share your address via WhatsApp.</p>
+  </main>
+  
+<footer class="footer">
+  <div class="container inner">
+    <div>
+      <h3>Swarnasudha Hair Oil</h3>
+      <p>100% pure, crafted with Ayurvedic ingredients for healthy hair.</p>
+      <p><strong>Disclaimer:</strong> This product is not a medicine. Individual results may vary.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <p><a href="about.html">About</a></p>
+      <p><a href="benefits.html">Benefits</a></p>
+      <p><a href="products.html">Buy Now</a></p>
+      <p><a href="cart.html">Cart</a></p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Phone: +91-90000-00000</p>
+      <p>Email: hello@swarnasudha.com</p>
+      <p>WhatsApp: <a href="https://wa.me/919000000000" target="_blank">Chat now</a></p>
+    </div>
+  </div>
+  <div class="copy">© 2025 Swarnasudha Hair Oil — All rights reserved.</div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
